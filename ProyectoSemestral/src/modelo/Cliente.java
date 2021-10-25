@@ -24,12 +24,15 @@ public class Cliente extends Object {
     }
 
     public Pedido[] getPedidosPendientes(){
+
+
+
         return null;
     }
 
     public boolean equals(Cliente other){
 
-        if (getRut() == other.getRut()){
+        if (this.rut == other.getRut()){
             return true;
         } else {
             return false;

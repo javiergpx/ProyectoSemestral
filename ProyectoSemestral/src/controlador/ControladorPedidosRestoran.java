@@ -1,5 +1,8 @@
 package controlador;
 
+import modelo.Cliente;
+import modelo.Producto;
+import modelo.Repartidor;
 import vista.UIPedidosRestoran;
 
 public class ControladorPedidosRestoran {
@@ -17,15 +20,16 @@ public class ControladorPedidosRestoran {
     }
 
     public void addCliente(String rut, String nombre, String domicilio, String telefono){
+        Cliente cliente = new Cliente(rut, nombre, domicilio, telefono);
 
     }
 
     public void addRepartidor(String rut, String nom, String dom, String tel){
-
+        Repartidor repartidor = new Repartidor(rut, nom, dom, tel);
     }
 
     public void addProductoBasico(int cod, String nombre, int precioCosto, int margenVenta){
-
+        Producto prod = new Producto(cod, nombre, precioCosto, margenVenta);
     }
 
     public void addStockAProducto(int codigo, int nroUnidades){
